@@ -13,6 +13,14 @@ async def on_ready():
     print(f"We have logged in as {client.user}")
 
 @client.event
+async def on_error(event, *args, **kwargs):
+    with open('err.log', 'a') as f:
+        if event == 'on_message':
+            f.write(f'Unhandled message: {args[0]}\n')
+        else:
+            raise
+
+@client.event
 async def on_message(message):
     if message.author == client.user:
         return
