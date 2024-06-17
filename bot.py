@@ -3,8 +3,9 @@ from dotenv import load_dotenv
 
 load_dotenv() # so we can easily access env vars
 TOKEN = os.getenv("TOKEN")
-
-client = discord.Client()
+intents = discord.Intents.default()
+intents.members = True # add or update these as needed
+client = discord.Client(intents=intents)
 
 # EVENTS
 
