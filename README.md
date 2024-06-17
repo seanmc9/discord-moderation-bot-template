@@ -7,6 +7,8 @@ To connect this bot to your Discord server with the necessary permissions, you'l
    - BOT_CLIENT_ID is also referred to as a bot's Application ID by Discord
    - PERMISSIONS is an integer that can be determined at the bottom of this page https://discord.com/developers/applications/YOUR_APPLICATION_ID_HERE/bot
 
+Very helpful reference: https://docs.pycord.dev/en/stable/api/models.html
+
 ## Requirements
 Rename `.example.env` to `.env` and fill it in wither your Discord Bot Token you'd like to add the bot to. 
 
