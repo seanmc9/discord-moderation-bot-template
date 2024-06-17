@@ -10,7 +10,7 @@ To connect this bot to your Discord server with the necessary permissions, you'l
 Very helpful reference: https://docs.pycord.dev/en/stable/api/models.html
 
 ## Requirements
-Rename `.example.env` to `.env` and fill it in wither your Discord Bot Token you'd like to add the bot to. 
+Rename `.example.env` to `.env` and fill it in wither your Discord Bot Token you'd like to add the bot to.
 
 ## To Run Locally
 Before running the bot you will need to install all the requirements with this command:
@@ -37,3 +37,7 @@ source ~/.virtualenvs/botenv/bin/activate
 pip install -r requirements.txt
 nohup python3 bot.py &
 ```
+
+## Development
+
+Use [`pipreqs`](https://builtin.com/software-engineering-perspectives/pip-freeze), not `pip freeze` to create `requirements.txt`.
